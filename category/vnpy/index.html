@@ -1,0 +1,20 @@
+---
+title: vnpy
+description: 
+---
+
+
+<div class="text-container">
+	<p class="editor-link"><a href="cloudcannon:collections/_posts" class="btn"><strong>&#9998;</strong> Add Post</a></p>
+	<ul class="blog-posts">
+		<!-- 
+			语法说明:
+			1. 通过url获取文件分类目录
+			2. 使用过滤器获得posts, 然后通过list-posts.html渲染
+		-->
+		{% assign url = page.url | split:"/" %}
+		{% assign fileter_posts = site.posts | where: "categories", url[2] %}
+		{% include list-posts.html posts=fileter_posts %}
+		
+	</ul>
+</div>
