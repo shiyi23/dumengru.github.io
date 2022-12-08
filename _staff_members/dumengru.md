@@ -1,7 +1,7 @@
 ---
-name: 杜梦如
-position: CEO
-image_path: https://source.unsplash.com/collection/139386/602x602?a=.png
-page_url: https://dumengru.github.io/
-blurb: 刷新一下会有惊喜哟...
+name: Jesse Du
+position: CTO
+image_path: https://raw.githubusercontent.com/dumengru/dumengru.github.io/master/images/weixin.png
+page_url: http://dumengru.com/
+blurb: day day up...
 ---

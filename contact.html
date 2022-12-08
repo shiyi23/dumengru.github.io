@@ -1,16 +1,33 @@
 ---
-title: 联系
-heading: 联系我们
-description: 如果您有什么需要帮助, 请通过邮件联系我们
-
+title: 联系我们
+heading: 一技之长/有偿帮助
+description: 
 map:
   latitude: 31.235097975711046
   longitude: 121.48423402718005
   address: "上海华设大厦"
   zoom: 17
 ---
-<div class="map" id="map"></div>
+<div class="contact-box">
+	<h3 class="editable">专业技能, 邮件格式:</h3>
+	
+	<pre>
+		<br>
+		<p>编程语言: (C++/Python)</p>
+		<p>擅长技能: (策略编写/系统搭建/数据分析...)</p>
+		<p>擅长系统: (WonderTrader/vnpy/MT5/CCXT/FreqTrade)</p>
+		<p>参考价格: (100元/小时工作量)<br></p>
+	</pre>
+	
+	<h3 class="editable">需求服务, 邮件格式:</h3>
+	<pre>
+		<br>
+		<p>需求内容: (指标编写, 系统搭建...)</p>
+		<p>详细描述: (...)</p>
+		<p>参考价格: (1000元)</p>
+	</pre>
 
+</div>
 
 <div class="contact-box">
 	<!-- <form action="{{ site.baseurl }}/contact-success/" method="post" class="contact-form">
@@ -34,9 +51,12 @@ map:
 		<address><a target="_blank" href="https://www.google.com/maps/place/{{ page.map.address | url_encode }}">{{ page.map.address | replace: ", ", ", <br>" }}</a></address>
 
 		<h3 class="editable">Email</h3>
-		<p><a href="mailto:393570727@qq.com">393570727@qq.com</a></p>
+		<p><a href="mailto: mengru.du@foxmail.com">mengru.du@foxmail.com</a></p>
 	</div>
 </div>
+
+<div class="map" id="map"></div>
+
 
 <script type="text/javascript">
 	window.mapData = {{ page.map | jsonify }};

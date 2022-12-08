@@ -1,7 +1,11 @@
+- name: 首页
+  link: /
+  new_window: true
+  highlight: false
 - name: 文章
   link: /blog/
   new_window: false
-  highlight: true
+  highlight: false
 - name: 关于
   link: /about/
   new_window: false
