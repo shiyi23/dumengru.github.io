@@ -8,26 +8,7 @@ map:
   address: "上海华设大厦"
   zoom: 17
 ---
-<div class="contact-box">
-	<h3 class="editable">专业技能, 邮件格式:</h3>
-	
-	<pre>
-		<br>
-		<p>编程语言: (C++/Python)</p>
-		<p>擅长技能: (策略编写/系统搭建/数据分析...)</p>
-		<p>擅长系统: (WonderTrader/vnpy/MT5/CCXT/FreqTrade)</p>
-		<p>参考价格: (100元/小时工作量)<br></p>
-	</pre>
-	
-	<h3 class="editable">需求服务, 邮件格式:</h3>
-	<pre>
-		<br>
-		<p>需求内容: (指标编写, 系统搭建...)</p>
-		<p>详细描述: (...)</p>
-		<p>参考价格: (1000元)</p>
-	</pre>
 
-</div>
 
 <div class="contact-box">
 	<!-- <form action="{{ site.baseurl }}/contact-success/" method="post" class="contact-form">
@@ -47,6 +28,19 @@ map:
 	</form> -->
 
 	<div class="contact-details">
+		<h3 class="editable">专业技能, 邮件格式:</h3>
+		<br>
+		<p>编程语言: (C++/Python)</p>
+		<p>擅长技能: (策略编写/系统搭建/数据分析...)</p>
+		<p>擅长系统: (WonderTrader/vnpy/MT5/CCXT/Freqtrade)</p>
+		<p>参考价格: (100元/小时工作量)<br></p>
+
+		<h3 class="editable">需求服务, 邮件格式:</h3>
+		<br>
+		<p>需求内容: (指标编写, 系统搭建...)</p>
+		<p>详细描述: (...)</p>
+		<p>参考价格: (1000元)</p>
+
 		<h3 class="editable">Address</h3>
 		<address><a target="_blank" href="https://www.google.com/maps/place/{{ page.map.address | url_encode }}">{{ page.map.address | replace: ", ", ", <br>" }}</a></address>
 
