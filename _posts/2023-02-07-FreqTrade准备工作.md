@@ -7,7 +7,10 @@ categories:
 author_staff_member: dumengru
 ---
 
+本文主要介绍FreqTrade的详细安装步骤及简单使用.
+
 ## 安装
+
 1. 先安装TA-Lib
 2. 将Github上"freqtrade"项目下载到本地
 3. 将"freqtrade/requirements.txt"文件中涉及"TA-Lib"那行注释掉(因为项目要求的版本和已安装的版本可能不一样)
@@ -23,9 +26,10 @@ pip install -e .
 ```python
 freqtrade
 ```
-![](../../images/202302070003.png)
+![](../images/202302070003.png)
 
 ## 常用命令
+
 "freqtrade"项目很规范, 所有的数据和策略都存放在一个文件夹下, 默认是"freqtrade/user_data/", 为了不混淆文件, 我新建了一个空目录"freqtrade_test", 以下所有的操作都在该目录下进行.
 
 **新建工作目录**
@@ -34,7 +38,7 @@ freqtrade
 ```shell
 freqtrade create-userdir --userdir ./
 ```
-![](../../images/202302070023.png)
+![](../images/202302070023.png)
 
 **新建配置**
 
@@ -42,7 +46,7 @@ freqtrade create-userdir --userdir ./
 ```shell
 freqtrade new-config
 ```
-![](../../images/202302072044.png)
+![](../images/202302072044.png)
 
 **新建策略**
 
@@ -57,7 +61,7 @@ freqtrade new-strategy --strategy strategy_test --userdir ./
 ```python
 freqtrade list-strategies --userdir ./
 ```
-![](../../images/202302072053.png)
+![](../images/202302072053.png)
 
 **查看交易所**
 
@@ -65,7 +69,7 @@ freqtrade list-strategies --userdir ./
 ```shell
 freqtrade list-exchanges
 ```
-![](../../images/202302072055.png)
+![](../images/202302072055.png)
 
 **查看时间周期**
 
@@ -83,7 +87,7 @@ freqtrade list-timeframes --exchange binance --userdir ./
 freqtrade list-markets --exchange binance --userdir ./
 ```
 
-![](../../images/202302072101.png)
+![](../images/202302072101.png)
 
 **数据下载**
 
