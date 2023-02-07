@@ -26,7 +26,7 @@ pip install -e .
 ```python
 freqtrade
 ```
-![](../images/202302070003.png)
+![]({{site.baseurl}}/images/202302070003.png)
 
 ## 常用命令
 
@@ -38,7 +38,7 @@ freqtrade
 ```shell
 freqtrade create-userdir --userdir ./
 ```
-![](../images/202302070023.png)
+![]({{site.baseurl}}/images/202302070023.png)
 
 **新建配置**
 
@@ -46,7 +46,7 @@ freqtrade create-userdir --userdir ./
 ```shell
 freqtrade new-config
 ```
-![](../images/202302072044.png)
+![]({{site.baseurl}}/images/202302072044.png)
 
 **新建策略**
 
@@ -61,7 +61,7 @@ freqtrade new-strategy --strategy strategy_test --userdir ./
 ```python
 freqtrade list-strategies --userdir ./
 ```
-![](../images/202302072053.png)
+![]({{site.baseurl}}/images/202302072053.png)
 
 **查看交易所**
 
@@ -69,7 +69,7 @@ freqtrade list-strategies --userdir ./
 ```shell
 freqtrade list-exchanges
 ```
-![](../images/202302072055.png)
+![]({{site.baseurl}}/images/202302072055.png)
 
 **查看时间周期**
 
@@ -87,7 +87,7 @@ freqtrade list-timeframes --exchange binance --userdir ./
 freqtrade list-markets --exchange binance --userdir ./
 ```
 
-![](../images/202302072101.png)
+![]({{site.baseurl}}/images/202302072101.png)
 
 **数据下载**
 
