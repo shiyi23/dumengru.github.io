@@ -1,28 +1,28 @@
 ---
 date: 2023-02-07
-title: FreqTrade准备工作
+title: 策略回测示例_FreqTrade
 categories:
   - tool
   - freqtrade
 author_staff_member: dumengru
 ---
 
-本文主要介绍FreqTrade的详细安装步骤及简单使用.
+本文主要介绍FreqTrade的详细安装步骤及回测演示.
 
 ## 安装
 
 1. 先安装TA-Lib
 2. 将Github上"freqtrade"项目下载到本地
 3. 将"freqtrade/requirements.txt"文件中涉及"TA-Lib"那行注释掉(因为项目要求的版本和已安装的版本可能不一样)
-3. 打开cmd, 进入"freqtrade"目录输入以下命令(安装项目所需所有工具包)
+4. 打开cmd, 进入"freqtrade"目录输入以下命令(安装项目所需所有工具包)
 ```python
 pip install -r requirements.txt
 ```
-4. 继续输入以下命令(安装freqtrade命令工具)
+5. 继续输入以下命令(安装freqtrade命令工具)
 ```python
 pip install -e .
 ```
-5. 测试安装成功输入(不出现"不是内部或外部命令..."即为成功)
+6. 测试安装成功输入(不出现"不是内部或外部命令..."即为成功)
 ```python
 freqtrade
 ```
@@ -97,8 +97,17 @@ freqtrade list-markets --exchange binance --userdir ./
 freqtrade download-data --exchange binance --pairs BTC/USDT --userdir ./ --timeframe 5m --timerange 20230201-
 ```
 
+**启动回测**
+1. 修改"config.json"中的配置如下
+![]({{site.baseurl}}/images/202302082257.png)
+2. 输入回测命令
+```shell
+freqtrade backtesting --timeframe 5m --strategy strategy_test --userdir ./
+```
+![]({{site.baseurl}}/images/202302082308.png)
+
 ## 总结
 
-以上命令都可以从官方文档中找到更详细的描述, 还有更多其他命令今后遇到时再提及.
+以上命令都可以从官方文档中找到更详细的描述, 关于配置的详细内容及更多其他命令今后将逐步介绍.
 
 仅仅几句简单的命令, 就完成了很多量化交易前期的准备工作. 你是否摩拳擦掌, 跃跃欲试呢?
