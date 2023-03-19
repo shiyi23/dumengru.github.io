@@ -1,10 +1,9 @@
 ---
-date: 2023-02-25
+date: 2023-02-28
 title: Freqtrade基础_小结(源码调试)
 categories:
   - knowledge
   - freqtrade
-  - tool
 author_staff_member: dumengru
 ---
 
@@ -44,7 +43,7 @@ author_staff_member: dumengru
 freqtrade backtesting --timeframe 5m --strategy SampleStrategy --userdir ../user_data --timerange=20230101-
 ```
 
-注意1: 不需要"freqtrae"这个词
+注意1: 不需要"freqtrade"这个词
 
 注意2: userdir的相对路径是相对于__main__.py这个文件的, 注意填写正确
 
